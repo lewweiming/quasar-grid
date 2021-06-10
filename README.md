@@ -6,6 +6,8 @@ Quasar grid is a project that explores the concept of grids. The idea extends fr
 - Test ability to drag Vue components into the grid to form a dashboard like interface
 - Idea inspired by https://www.drupal.org/project/gridstack
 
+![](https://user-images.githubusercontent.com/6176407/121460120-0002b700-c9df-11eb-97aa-6843cedd4ba0.png)
+
 ## Dependencies
 
 - Vue Code Highlighter (https://vuejsexamples.com/beautiful-code-highlighter-as-vue-js-component/)
