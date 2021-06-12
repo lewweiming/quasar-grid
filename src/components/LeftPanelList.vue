@@ -1,20 +1,74 @@
 <template>
   <q-list separator class="bg-grey-10 text-grey-2 full-height">
-    <q-item-label header class="text-primary"> Explore Gridstack </q-item-label>
-    <q-item :to="i.route" v-for="i in items" clickable>
-      <q-item-section avatar>
-        <q-icon name="chevron_right" />
-      </q-item-section>
-      <q-item-section>
-        {{ i.label }}
-      </q-item-section>
-    </q-item>
+      <q-expansion-item
+        expand-separator
+        label="Explore Gridstack"
+        class="text-primary"
+      >
+        <q-card>
+          <q-card-section class="q-pa-none">
+            <q-list separator class="bg-grey-10 text-grey-2">
+            <q-item :to="i.route" v-for="i in gridStackItems" clickable>
+              <q-item-section avatar>
+                <q-icon name="chevron_right" />
+              </q-item-section>
+              <q-item-section>
+                {{ i.label }}
+              </q-item-section>
+            </q-item>
+            </q-list>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+
+      <q-expansion-item
+        expand-separator
+        label="Explore Flexbox Grids"
+        class="text-primary"
+      >
+        <q-card>
+          <q-card-section class="q-pa-none">
+            <q-list separator class="bg-grey-10 text-grey-2">
+            <q-item :to="i.route" v-for="i in flexboxItems" clickable>
+              <q-item-section avatar>
+                <q-icon name="chevron_right" />
+              </q-item-section>
+              <q-item-section>
+                {{ i.label }}
+              </q-item-section>
+            </q-item>
+            </q-list>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>   
+
+      <q-expansion-item
+        expand-separator
+        label="Explore CSS Grids"
+        class="text-primary"
+      >
+        <q-card>
+          <q-card-section class="q-pa-none">
+            <q-list separator class="bg-grey-10 text-grey-2">
+            <q-item :to="i.route" v-for="i in cssItems" clickable>
+              <q-item-section avatar>
+                <q-icon name="chevron_right" />
+              </q-item-section>
+              <q-item-section>
+                {{ i.label }}
+              </q-item-section>
+            </q-item>
+            </q-list>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>   
+    
 
   </q-list>
 </template>
 
 <script>
-const items = [
+const gridStackItems = [
   {
     label: "Code Hints",
     route: 'code-hints'
@@ -73,10 +127,34 @@ const items = [
   },
 ]
 
+const flexboxItems = [
+  {
+    label: "Basic",
+    route: 'flexbox-basic'
+  },
+  {
+    label: "Advance",
+    route: 'flexbox-advance'
+  }
+]
+
+const cssItems = [
+  {
+    label: "Basic",
+    route: 'css-basic'
+  },
+  {
+    label: "Advance",
+    route: 'css-advance'
+  }
+]
+
 export default {
   data() {
     return {
-      items
+      gridStackItems,
+      flexboxItems,
+      cssItems
     };
   },
 };

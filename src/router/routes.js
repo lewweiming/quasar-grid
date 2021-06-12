@@ -18,7 +18,18 @@ const routes = [
       { path: 'gridstack-components', component: () => import('pages/GridStackComponents.vue') },
       { path: 'gridstack-indicators', component: () => import('pages/GridStackIndicators.vue') },
       { path: 'gridstack-carousel', component: () => import('pages/GridStackCarousel.vue') },
-      { path: 'gridstack-metro', component: () => import('pages/GridStackMetro.vue') }
+      { path: 'gridstack-metro', component: () => import('pages/GridStackMetro.vue') },
+
+      /* Flex Box */
+      { path: 'flexbox-basic', component: () => import('pages/FlexboxGridBasic.vue') },
+      { path: 'flexbox-advance', component: () => import('pages/FlexboxGridAdvance.vue') },
+
+      /* CSS */
+      { path: 'css-basic', component: () => import('pages/CssBasic.vue') },
+      { path: 'css-advance', component: () => import('pages/CssAdvance.vue') },
+      
+      /* Json to Html */
+      { path: 'mapper', component: () => import('pages/JsonHtmlMapper.vue') },
     ]
   },
 

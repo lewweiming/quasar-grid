@@ -9,6 +9,7 @@
         </q-bar>
 
         <q-card-section class="q-pa-none">
+          <q-scroll-area style="height: 500px; min-width: 500px;">
           <div v-highlight>
             <pre class="language-javascript">
 <!-- Optional <code style="white-space: pre-wrap;"> for wrapped lines -->
@@ -18,6 +19,7 @@
 </code>
 </pre>
           </div>
+          </q-scroll-area>
         </q-card-section>
       </q-card>
     </q-page-sticky>
@@ -28,7 +30,6 @@ export default {
 
   data() {
     return {
-
     }
   }
 

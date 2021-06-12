@@ -117,7 +117,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .expandable-container {
   height: 20px;
   transition: all .3s ease;

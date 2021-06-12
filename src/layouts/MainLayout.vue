@@ -15,7 +15,7 @@
            <q-btn to="/" flat no-caps label="Quasar Grid" />
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <q-btn to="/mapper" no-caps label="Mapper" icon="build" />
       </q-toolbar>
     </q-header>
 
